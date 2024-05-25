@@ -5,14 +5,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import com.canerdedeoglu.sayitahminet.databinding.FragmentSonucEkraniBinding
 
 
 class SonucEkraniFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sonuc_ekrani, container, false)
+    lateinit var viewBinding: FragmentSonucEkraniBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        viewBinding = FragmentSonucEkraniBinding.inflate(inflater, container, false)
+
+        viewBinding.btnTekrar.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.anaSayfaGidis)
+        }
+
+        return viewBinding.root
     }
 
 
