@@ -50,8 +50,10 @@ class OyunEkraniFragment : Fragment() {
 
             if (hak > 0) {
                 if (sayiGir < sayi) {
+                    viewBinding.txtIslem.visibility = View.VISIBLE
                     viewBinding.txtIslem.text = "Sayıyı Arttır!"
                 } else {
+                    viewBinding.txtIslem.visibility = View.VISIBLE
                     viewBinding.txtIslem.text = "Sayıyı Azalt!"
                 }
                 viewBinding.txtHak.text = "Kalan Hakkınız: $hak"
