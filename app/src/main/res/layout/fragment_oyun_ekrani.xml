@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="KALAN HAK : 5"
+        android:text="Kalan Hakkınız :5"
         android:textColor="#AF1C1C"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
