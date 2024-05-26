@@ -35,5 +35,8 @@
             app:destination="@id/anaSayfaFragment"
             app:popUpTo="@id/sonucEkraniFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="sonuc"
+            app:argType="boolean" />
     </fragment>
 </navigation>
